@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DashboardBackend.Database\DashboardBackend.Database.csproj" />
+    <ProjectReference Include="..\DashboardBackend.Utility\DashboardBackend.Utility.csproj" />
+    <ProjectReference Include="..\DashboardBackend.Database\DashboardBackend.Database.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="graphiql" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DashboardBackend.DataAccess\DashboardBackend.DataAccess.csproj" />
+    <ProjectReference Include="..\DashboardBackend.Database\DashboardBackend.Database.csproj" />
+    <ProjectReference Include="..\DashboardBackend.Types\DashboardBackend.Types.csproj" />
+    <ProjectReference Include="..\DashboardBackend.Utility\DashboardBackend.Utility.csproj" />
+
+  </ItemGroup>
+
+</Project>
