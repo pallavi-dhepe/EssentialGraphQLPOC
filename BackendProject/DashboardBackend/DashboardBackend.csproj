@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DashboardBackend.BL\DashboardBackend.BL.csproj" />
     <ProjectReference Include="..\DashboardBackend.DataAccess\DashboardBackend.DataAccess.csproj" />
     <ProjectReference Include="..\DashboardBackend.Database\DashboardBackend.Database.csproj" />
     <ProjectReference Include="..\DashboardBackend.Types\DashboardBackend.Types.csproj" />

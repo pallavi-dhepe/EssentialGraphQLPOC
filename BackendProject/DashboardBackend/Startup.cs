@@ -13,6 +13,8 @@ using DashboardBackend.Database;
 using DashboardBackend.Queries;
 using DashboardBackend.Schemas;
 using DashboardBackend.Types;
+using DashboardBackend.BL.Services;
+using DashboardBackend.BL.Interfaces;
 
 namespace DashboardBackend
 {
@@ -34,6 +36,7 @@ namespace DashboardBackend
             services.AddDbContext<DashboardDBContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DashboardDBConnection"]));
             services.AddTransient<IProjectRepository, ProjectRepository>();
             services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<IProjectService, ProjectService>();
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<ProjectQuery>();
             services.AddSingleton<ProjectType>();

@@ -1,22 +1,21 @@
-﻿using GraphQL.Types;
-using DashboardBackend.DataAccess.Contracts;
+﻿using DashboardBackend.BL.Interfaces;
 using DashboardBackend.Types;
+using GraphQL.Types;
 
 namespace DashboardBackend.Queries
 {
     public class ProjectQuery : ObjectGraphType
     {
-        public ProjectQuery(IProjectRepository projectRepository)
+        public ProjectQuery(IProjectService projectService) 
         {
             Field<ListGraphType<ProjectType>>(
                 "projects",
-                resolve: context => projectRepository.GetAll());
+                resolve: context => projectService.GetAllProjects());
 
             Field<ProjectType>(
                "project",
                arguments: new QueryArguments(new QueryArgument<IntGraphType> { Name = "projectid" }),
-               resolve: context => projectRepository.Get(context.GetArgument<int>("projectid")));
-           
+               resolve: context => projectService.GetProject(context.GetArgument<int>("projectid")));          
           
         }
     }
