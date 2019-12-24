@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DashboardBackend.DataAccess\DashboardBackend.DataAccess.csproj" />
     <ProjectReference Include="..\DashboardBackend.Database\DashboardBackend.Database.csproj" />
     <ProjectReference Include="..\DashboardBackend.Types\DashboardBackend.Types.csproj" />
