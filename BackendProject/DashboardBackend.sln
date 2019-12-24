@@ -15,7 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardBackend.Utility", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardBackend.BL", "DashboardBackend.BL\DashboardBackend.BL.csproj", "{3DA20124-DEDF-4B94-B717-0CCA75CCC7C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardConsoleApp_MessageReader", "DashboardConsoleApp_MessageReader\DashboardConsoleApp_MessageReader.csproj", "{B02A45C7-069B-446B-9420-F6FFF2B99241}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardConsoleApp_MessageReader", "DashboardConsoleApp_MessageReader\DashboardConsoleApp_MessageReader.csproj", "{B02A45C7-069B-446B-9420-F6FFF2B99241}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{380183B8-5FFE-4665-9DB9-75F9582C61DC}"
+	ProjectSection(SolutionItems) = preProject
+		..\PortalServiceBusQueue.PNG = ..\PortalServiceBusQueue.PNG
+		..\PortalServiceBusQueueReceiver.PNG = ..\PortalServiceBusQueueReceiver.PNG
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
