@@ -23,7 +23,8 @@
     persons {
       personId,
       personName
-    }  } }```
+    }  } }
+```
 
 Sample Response
 
@@ -56,7 +57,7 @@ Sample Response
         "persons": []
       },
       { ...
-	  ```
+```
 
 ######Below query returns project with id 1 with projectid, projectname and persons allocated to project list which has personid and personname information with each person and person who has role 5 (manager role).
 ```{
@@ -87,10 +88,27 @@ Sample Response
   }
 }
 ```
-###Screenshots
+
+
+##Future Enhancements in this POC
+
+- Asp.net core in built unit of work library for unit of work design pattern
+- Graphql client integration (in angular app)
+- Mutation code in GraphQL for insert/update operation (right now get opeartions are done)
+- Service bus receiver - adding message in audit database
+
+
+
+##Screenshots
+
+####Database tables
+![](DBTables.png)
+
 
 ####Message at azure service bus
 ![](PortalServiceBusQueue.PNG)
+
+
 
 ####Service bus- queue - Receiver console application - receiving message from queue
 ![](PortalServiceBusQueueReceiver.PNG)
